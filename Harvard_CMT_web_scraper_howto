@@ -3,3 +3,4 @@
 2) import Harvard_CMT_web_scraper
 3) Use the primary get_events function to make the request. You must enter a date range, magnitude range, depth range, and region box, which are all lists.
 4) The output is Harvard_CMT_startDate_endDate.txt where startDate and endDate are the dates you put in the date range list.
+5) Output format: timestamp,longitude,latitude,depth,Mw,M0,faultPlane1,faultPlane2
