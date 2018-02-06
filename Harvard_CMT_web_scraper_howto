@@ -1,4 +1,5 @@
 
 1) Need to have beautiful soup and pandas installed.
 2) import Harvard_CMT_web_scraper
-3) Use the primary get_events function to make the request. You must enter a date range, magnitude range, depth range, and region box.
+3) Use the primary get_events function to make the request. You must enter a date range, magnitude range, depth range, and region box, which are all lists.
+4) The output is Harvard_CMT_startDate_endDate.txt where startDate and endDate are the dates you put in the date range list.
