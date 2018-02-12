@@ -1,0 +1,18 @@
+
+NOTES:
+
+1) requires Pandas module.
+
+2) Reads and modifies 4 catalog types:
+Advanced National Seismic System (ANSS):  http://ncedc.org/anss/catalog-search.html
+Southern California Earthquake Data Center (SCEDC): https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php
+International Seismological Centre (ISC)/Incorporated Research Institutes for Seismology (IRIS): http://www.isc.ac.uk/iscbulletin/search/catalogue/
+GEONET: https://www.geonet.org.nz/data/types/eq_catalogue
+
+3) import catalog_reader
+
+4) usage: 
+catalog_reader.mod_ANSS_csv(fileName)
+catalog_reader.mod_SCEDC_csv(fileName)
+catalog_reader.mod_IRIS_csv(fileName)
+catalog_reader.mod_GEONET_csv(fileName)
