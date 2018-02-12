@@ -12,4 +12,7 @@ NOTES:
 5) Output format: timestamp,longitude,latitude,depth,Mw,M0,faultPlane1,faultPlane2
 
 6) The faultPlane1 and faultPlane2 columns are lists of the fault plane solutions (strike,dip,rake). They will be read by pandas as strings. To evaulate then as literal, use: from ast import literal_eval
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f4bf4cd65814bf8c1e5120a6410316319c2d262
