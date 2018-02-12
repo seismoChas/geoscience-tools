@@ -8,11 +8,10 @@ import calendar
 
 '''
 Reads and modifies 4 catalog types:
-Advanced National Seismic System (ANSS)
-Southern California Earthquake Data Center (SCEDC)
-International Seismological Centre (ISC)/Incorporated Research Institutes for Seismology (IRIS)
-GEONET
-
+Advanced National Seismic System (ANSS):  http://ncedc.org/anss/catalog-search.html
+Southern California Earthquake Data Center (SCEDC): https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php
+International Seismological Centre (ISC)/Incorporated Research Institutes for Seismology (IRIS): http://www.isc.ac.uk/iscbulletin/search/catalogue/
+GEONET: https://www.geonet.org.nz/data/types/eq_catalogue
 
 '''
 
