@@ -2,6 +2,8 @@
 
 '''
 
+Computes the end points of perpendicular transects and projects
+longitude/latitude coordinates along a transect.
 
 '''
 
