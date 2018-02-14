@@ -1,0 +1,51 @@
+
+NOTES
+
+1) need Pandas and pyproj modules
+
+2) import catalog_projection
+
+3) 
+get the projection variable and find the coordinates of your transects (for map plotting)...
+usage: catalog_projection.get_transect_coords(center,azimuth,length,width,ellipsoid='clrk66'):
+
+    '''
+    Computes endpoints of 2 perpendicular transects.
+
+    Input:
+    center = center point (lon,lat)
+    azimuth = azimuth to transect from north in degrees
+    length = distances in meters from center point along transect (lengthMin,lengthMax)
+    width = distances in meters perpendicular to transect (widthMin,widthMax)
+    ellipsoid = ellipsoid to use for the projection (optional, auto-set to clrk66)
+
+    Returns:
+    g = projection (for project_points() function)
+    parallel transect coords (for map plotting)
+    perpendicular transect coords (for map plotting)
+
+    '''
+
+
+to project points along a transect...
+usage: catalog_projection.project_points(df,g,center,azimuth):
+
+    '''
+    Projects all points onto the transect defined by
+    center point (center) and azimuth (azimuth) in projection (g).
+
+    Input:
+    df = pandas dataframe with at least "Longitude" and "Latitude" columns (see for example catalog_reader.py)
+    g = projection (given by get_transect_coords(center,azimuth,length,width)) or you could set it yourself
+    center = center point (lon,lat)
+    azimuth = azimuth to transect from north in degrees
+
+    Returns:
+    original dataframe (df) with added columns 'xx' and 'yy' where
+    xx is distance in kilometers from center point along transect
+    yy is distance in kilometers from center point along the perpendicular transect
+
+    '''
+
+
+ 
