@@ -34,7 +34,7 @@ def query_website(dateRange,magRange,boxRange,depthRange):
     minDepth = depthRange[0]
     maxDepth = depthRange[1]
     
-    beginning_of_link = 'http://www.globalcmt.org/cgi-bin/globalcmt-cgi-bin/CMT4/form?itype=ymd&'
+    beginning_of_link = 'http://www.globalcmt.org/cgi-bin/globalcmt-cgi-bin/CMT5/form?itype=ymd&'
     middle_of_link1 = 'yr=%4.0f&mo=%.02f&day=%02.0f&otype=ymd&oyr=%04.0f&omo=%02.0f&oday=%02.0f' % (startYr,startMo,startDy,endYr,endMo,endDy)
     middle_of_link2 = '&jyr=1976&jday=1&ojyr=1976&ojday=1&nday=1&'
     middle_of_link3 = 'lmw=%.1f&umw=%.1f&llat=%.4f&ulat=%.4f&llon=%.4f&ulon=%.4f&lhd=%.0f&uhd=%.0f&' % (minMag,maxMag,llat,ulat,llon,ulon,minDepth,maxDepth)
@@ -95,7 +95,7 @@ def get_parameters(soup):
             faultPlanes.append([strike,dip,rake])
             
         if 'Lat' in line:
-            Lat.append(float(line.split(' ')[4]))
+            Lat.append(float(line.split(' ')[3]))
             Lon.append(float(line.split(' ')[-1]))
             
         if 'Depth' in line:
