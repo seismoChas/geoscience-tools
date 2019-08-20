@@ -95,7 +95,7 @@ def get_parameters(soup):
             faultPlanes.append([strike,dip,rake])
             
         if 'Lat' in line:
-            Lat.append(float(line.split(' ')[3]))
+            Lat.append(float(line.split(' ')[4]))
             Lon.append(float(line.split(' ')[-1]))
             
         if 'Depth' in line:
