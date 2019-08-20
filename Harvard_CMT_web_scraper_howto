@@ -1,18 +1,18 @@
 
 NOTES:
 
-1) Need to have beautiful soup and pandas installed.
+1) Need to have beautiful soup, wget, and pandas installed.
 
 2) import Harvard_CMT_web_scraper
 
 3) Use the primary get_events function to make the request. You must enter a date range, magnitude range, depth range, and region box, which are all lists.
+dateRange: start date and end date in 'YYYY-MM-DD' format as list; [startDate,endDate]
+magRange: minimum and maximum moment magnitude as list; [minMag,maxMag]
+boxRange: lower left corner and upper right corner coordinates as list; [lonMin,lonMax,latMin,latMax]
+depthRange: minimum and maximum depth in kilometers as list; [minDepth,maxDepth]
 
 4) The output is Harvard_CMT_startDate_endDate.txt where startDate and endDate are the dates you put in the date range list.
 
 5) Output format: timestamp,longitude,latitude,depth,Mw,M0,faultPlane1,faultPlane2
 
 6) The faultPlane1 and faultPlane2 columns are lists of the fault plane solutions (strike,dip,rake). They will be read by pandas as strings. To evaulate then as literal, use: from ast import literal_eval
-<<<<<<< HEAD
-
-=======
->>>>>>> 5f4bf4cd65814bf8c1e5120a6410316319c2d262
